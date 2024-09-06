@@ -1,10 +1,13 @@
+import { Shape } from './shape';
+
+
 interface Rectangle {
     width: number,
     height: number,
     computeArea: () => number
 }
 
-function newRectangle(width: number, height: number): Rectangle {
+function rectangle(width: number, height: number): Rectangle {
     return {
         width,
         height,
@@ -15,4 +18,4 @@ function newRectangle(width: number, height: number): Rectangle {
     }
 }
 
-export { Rectangle, newRectangle }
+export { rectangle }
